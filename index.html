@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change The Narrative | RPCCP-Powered Campaign Strategy</title>
+    <meta name="description" content="AI-powered campaign strategy for Democrats at every level. 5 models debate until unanimous consensus. The party of Jesus starts here.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            min-height: 100vh;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px 40px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3.2em;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+            line-height: 1.1;
+        }
+        h1 span { color: #58a6ff; }
+        .subtitle {
+            font-size: 1.3em;
+            color: #8b949e;
+            margin-bottom: 16px;
+            font-weight: 300;
+            max-width: 600px;
+        }
+        .scripture {
+            font-style: italic;
+            color: #a09880;
+            font-family: Georgia, serif;
+            font-size: 1em;
+            margin-bottom: 48px;
+            max-width: 500px;
+        }
+        .divider {
+            width: 60px;
+            height: 2px;
+            background: #58a6ff;
+            margin: 0 auto 48px;
+        }
+        .proof {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 32px 40px;
+            max-width: 720px;
+            width: 100%;
+            margin-bottom: 48px;
+            text-align: left;
+        }
+        .proof h2 {
+            font-size: 1em;
+            color: #58a6ff;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        .proof p {
+            font-size: 0.95em;
+            line-height: 1.8;
+            color: #c9d1d9;
+            margin-bottom: 12px;
+        }
+        .proof strong { color: #fff; }
+        .stats {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        .stat {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 20px 24px;
+            text-align: center;
+            min-width: 140px;
+        }
+        .stat .number {
+            font-size: 2em;
+            font-weight: 700;
+            color: #58a6ff;
+        }
+        .stat .label {
+            font-size: 0.75em;
+            color: #8b949e;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .section-title {
+            font-size: 1.6em;
+            color: #fff;
+            text-align: center;
+            margin: 60px 0 32px;
+        }
+        .tiers {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 900px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
+        }
+        .tier {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 28px 24px;
+            flex: 1;
+            min-width: 190px;
+            max-width: 210px;
+        }
+        .tier .name {
+            font-size: 0.8em;
+            color: #58a6ff;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+        }
+        .tier .price {
+            font-size: 2em;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .tier .price span {
+            font-size: 0.4em;
+            color: #8b949e;
+            font-weight: 400;
+        }
+        .tier .races {
+            font-size: 0.85em;
+            color: #c9d1d9;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .tier .detail {
+            font-size: 0.8em;
+            color: #8b949e;
+            line-height: 1.6;
+        }
+        .includes {
+            max-width: 720px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
+        }
+        .includes h2 {
+            text-align: center;
+            font-size: 1.2em;
+            color: #fff;
+            margin-bottom: 24px;
+        }
+        .includes ul {
+            list-style: none;
+            columns: 2;
+            gap: 16px;
+        }
+        .includes li {
+            font-size: 0.9em;
+            color: #c9d1d9;
+            padding: 6px 0 6px 20px;
+            position: relative;
+            break-inside: avoid;
+        }
+        .includes li::before {
+            content: "\2713";
+            color: #3fb950;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .matthew {
+            max-width: 720px;
+            margin: 0 auto 60px;
+            padding: 40px;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .matthew h2 {
+            font-size: 1.1em;
+            color: #a09880;
+            font-family: Georgia, serif;
+            margin-bottom: 20px;
+        }
+        .matthew .pillars {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+        .matthew .pillar {
+            padding: 8px 16px;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            font-size: 0.85em;
+            color: #c9d1d9;
+        }
+        .cta {
+            text-align: center;
+            padding: 40px 20px 60px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 14px 36px;
+            background: #58a6ff;
+            color: #0d1117;
+            font-size: 1em;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            letter-spacing: 0.03em;
+            margin-bottom: 20px;
+        }
+        .cta-button:hover { background: #79b8ff; }
+        .cta p {
+            font-size: 0.9em;
+            color: #8b949e;
+            margin-top: 8px;
+        }
+        .cta a { color: #58a6ff; text-decoration: none; }
+        .cta a:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8em;
+            color: #30363d;
+            border-top: 1px solid #21262d;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2em; }
+            .includes ul { columns: 1; }
+            .tier { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Change The <span>Narrative</span></h1>
+        <div class="subtitle">AI-powered campaign strategy for Democrats at every level of government.</div>
+        <div class="scripture">"I was hungry and you gave me food. I was a stranger and you welcomed me. I was sick and you looked after me." — Matthew 25:35-36</div>
+        <div class="divider"></div>
+
+        <div class="proof">
+            <h2>What RPCCP Does</h2>
+            <p>Five AI models analyze your race simultaneously. They debate each other. They challenge assumptions. They keep going until they reach <strong>unanimous consensus</strong> — or tell you exactly where they disagree and why.</p>
+            <p>The engine that produced <strong>novel cancer research protocols</strong> converging on the same targets as $67M of funded medical research. The engine that generated <strong>legally sound court motions</strong> used in active litigation. Now deployed for <strong>political strategy</strong> across 9 U.S. Senate campaigns.</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="number">5</div>
+                <div class="label">AI Models</div>
+            </div>
+            <div class="stat">
+                <div class="number">9</div>
+                <div class="label">Senate Campaigns</div>
+            </div>
+            <div class="stat">
+                <div class="number">&lt;2min</div>
+                <div class="label">To Consensus</div>
+            </div>
+            <div class="stat">
+                <div class="number">35</div>
+                <div class="label">Staff Contacted</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">Campaign Strategy Tiers</div>
+    <div class="tiers">
+        <div class="tier">
+            <div class="name">State House</div>
+            <div class="price">$199<span>/mo</span></div>
+            <div class="races">State Legislative Races</div>
+            <div class="detail">Full strategic package + weekly updates through election day.</div>
+        </div>
+        <div class="tier">
+            <div class="name">State Senate</div>
+            <div class="price">$299<span>/mo</span></div>
+            <div class="races">State Senate Races</div>
+            <div class="detail">Full strategic package + weekly updates through election day.</div>
+        </div>
+        <div class="tier">
+            <div class="name">US House</div>
+            <div class="price">$499<span>/mo</span></div>
+            <div class="races">Congressional Races</div>
+            <div class="detail">Full strategic package + weekly updates, debate prep, attack response.</div>
+        </div>
+        <div class="tier">
+            <div class="name">US Senate</div>
+            <div class="price">$499<span>/mo</span></div>
+            <div class="races">Senate Races</div>
+            <div class="detail">Full strategic package + weekly updates, debate prep, attack response, vulnerability conversion.</div>
+        </div>
+    </div>
+
+    <div class="includes">
+        <h2>Every Tier Includes</h2>
+        <ul>
+            <li>RPCCP convergence analysis (5 models, unanimous consensus)</li>
+            <li>Strategic memo with path to victory</li>
+            <li>Talking points with attack responses</li>
+            <li>Volunteer scripts (English + Spanish)</li>
+            <li>Finance strategy tied to narrative momentum</li>
+            <li>Weakness-to-strength conversion</li>
+            <li>Weekly updates through election day</li>
+            <li>Cover letter addressed directly to the candidate</li>
+        </ul>
+    </div>
+
+    <div class="matthew">
+        <h2>The Framework: Matthew 25:31-46</h2>
+        <div class="pillars">
+            <div class="pillar">Feed the hungry</div>
+            <div class="pillar">Clothe the naked</div>
+            <div class="pillar">Welcome the stranger</div>
+            <div class="pillar">Heal the sick</div>
+            <div class="pillar">Visit the prisoner</div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <a href="mailto:don@dandydon.media" class="cta-button">Get Your Campaign Analysis</a>
+        <p>Don Brown &middot; Trinity, Texas</p>
+        <p><a href="mailto:don@dandydon.media">don@dandydon.media</a> &middot; (409) 332-9313</p>
+    </div>
+
+    <div class="footer">
+        <p>Powered by RPCCP &mdash; Recursive Precision Cognitive Calibration Protocol</p>
+        <p>Cancer cures published free. Because that's what Jesus would do.</p>
+    </div>
+</body>
+</html>
